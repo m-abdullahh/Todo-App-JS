@@ -24,25 +24,19 @@ body {
 .todo-app {
   width: 100%;
   max-width: 540px;
-  /* background: #6e6e6e; */
   margin: 00px auto 20px;
   padding: 40px 30px 70px;
-  /* border-radius: 10px; */
 }
 
 .todo-app h1 {
   display: flex;
   justify-content: center;
-  align-items: center;
   font-size: 3rem;
   margin: 20px 0;
-  text-align: center;
 }
 .row {
   display: flex;
-  align-items: center;
   background-color: #223237;
-  justify-content: space-between;
   border-radius: 30px;
   padding-left: 20px;
   margin-bottom: 25px;
@@ -127,4 +121,16 @@ ul li span:hover {
   rotate: -45deg;
   color: #fdc67d;
   transition: all 0.3s;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    /* padding: 0px; */
+  }
+
+  .todo-app {
+    margin: 00px auto 20px;
+    padding: 40px 0px 70px;
+  }
 }
