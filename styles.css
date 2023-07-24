@@ -128,9 +128,3 @@ ul li span:hover {
   color: #fdc67d;
   transition: all 0.3s;
 }
-
-@media screen and (max-width: 600px) {
-  .todo-app {
-    max-width: 340px;
-  }
-}
