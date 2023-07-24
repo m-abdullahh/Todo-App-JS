@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0b1416;
+  color: #ffffffdc;
+  font-weight: 300;
+  /* margin: 0 20px; */
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  /* background: #6e6e6e; */
+  margin: 00px auto 20px;
+  padding: 40px 30px 70px;
+  /* border-radius: 10px; */
+}
+
+.todo-app h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  margin: 20px 0;
+  text-align: center;
+}
+.row {
+  display: flex;
+  align-items: center;
+  background-color: #223237;
+  justify-content: space-between;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  font-weight: 300;
+  color: #ffdfb5;
+  letter-spacing: 0.5px;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 25px;
+  border-radius: 100px;
+  background: none;
+  transition: color 0.5s;
+  color: #ffffff8e;
+  font-size: 16px;
+}
+
+button:hover {
+  color: #fdc67d;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 12px 80px 12px 0px;
+  user-select: none;
+  position: relative;
+  transition: color 0.2s;
+  margin-left: 50px;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-image: url(unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 15.5px;
+  transition: background-image 0.3s;
+  left: -30px;
+}
+
+ul li.checked {
+  /* text-decoration: line-through #ff9900; */
+  color: #ffffff28;
+  transition: color 0.3s;
+}
+
+ul li.checked::before {
+  background-image: url(checked.png);
+  transition: background-image 0.3s;
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  transition: rotate 0.5s;
+  font-size: 26px;
+  padding: 2px 2px;
+  margin-right: 15px;
+}
+
+ul li span:hover {
+  rotate: -45deg;
+  color: #fdc67d;
+  transition: all 0.3s;
+}
