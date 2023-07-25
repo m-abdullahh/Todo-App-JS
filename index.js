@@ -20,7 +20,6 @@ function addTask() {
     span.innerHTML = "\u00d7";
     li.appendChild(span);
 
-    // Call saveData() to save the updated list to localStorage
     saveData();
   }
 
@@ -32,11 +31,9 @@ listContainer.addEventListener(
   function (e) {
     if (e.target.tagName === "LI") {
       e.target.classList.toggle("checked");
-      // Call saveData() to save the updated list to localStorage
       saveData();
     } else if (e.target.tagName === "SPAN") {
       e.target.parentElement.remove();
-      // Call saveData() to save the updated list to localStorage
       saveData();
     }
   },
@@ -52,8 +49,8 @@ window.addEventListener("load", showTask);
 const getDadJoke = async () => {
   const config = { headers: { Accept: "application/json" } };
   const res = await axios.get("https://icanhazdadjoke.com/", config);
-  Joke.append(res.data.joke);
   Joke.innerHTML = res.data.joke;
 };
 
 window.addEventListener("load", getDadJoke);
+Joke.addEventListener("click", getDadJoke);
