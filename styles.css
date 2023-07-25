@@ -30,7 +30,7 @@ body {
 
 .todo-app h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 20px;
 }
 .row {
@@ -46,7 +46,7 @@ input {
   border: none;
   background: none;
   outline: none;
-  font-size: 16px;
+  font-size: 10px;
   text-overflow: clip;
   font-weight: 300;
   color: #ffdfb5;
@@ -61,7 +61,7 @@ button {
   background: none;
   transition: color 0.5s;
   color: #ffffff8e;
-  font-size: 16px;
+  font-size: 10px;
 }
 
 button:hover {
@@ -70,7 +70,7 @@ button:hover {
 
 ul li {
   display: flex;
-  justify-content: space-between;
+  justify-content: space;
   list-style: none;
   font-weight: 300;
   font-size: 16px;
@@ -78,7 +78,7 @@ ul li {
   user-select: none;
   position: relative;
   transition: color 0.2s;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 ul li::before {
