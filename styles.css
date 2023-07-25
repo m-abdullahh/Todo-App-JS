@@ -34,6 +34,7 @@ body {
   margin-bottom: 20px;
 }
 .row {
+  max-width: 300px;
   display: flex;
   justify-content: center;
   background-color: #223237;
@@ -92,7 +93,7 @@ ul li::before {
   background-position: center;
   top: 15.5px;
   transition: background-image 0.3s;
-  left: -30px;
+  margin-left: -30px;
 }
 
 ul li.checked {
@@ -108,12 +109,12 @@ ul li.checked::before {
 
 ul li span {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 0px;
   transition: rotate 0.5s;
   font-size: 26px;
   padding: 5px 5px;
-  margin-right: 15px;
+  /* margin-right: 15px; */
 }
 
 ul li span:hover {
@@ -123,6 +124,6 @@ ul li span:hover {
 }
 
 #joke {
-  margin: 0% 28%;
+  /* margin: 0% 28%; */
   text-align: center;
 }
