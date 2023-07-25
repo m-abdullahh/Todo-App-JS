@@ -112,16 +112,16 @@ ul li span {
   position: absolute;
   right: 0;
   top: 0px;
-  transition: rotate 0.5s;
+  transition: rotate 0.5s ease-in-out, color 0.5s ease-in-out;
   font-size: 26px;
   padding: 5px 5px;
   margin-right: 15px;
 }
 
 ul li span:hover {
-  rotate: -45deg;
+  rotate: -90deg;
   color: #fdc67d;
-  transition: all 0.3s;
+  transition: rotate 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 #joke {
