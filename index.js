@@ -1,6 +1,7 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 const Btn = document.querySelector(".Btn");
+const Joke = document.querySelector("#joke");
 
 function saveData() {
   localStorage.setItem("data", listContainer.innerHTML);
@@ -47,3 +48,12 @@ function showTask() {
 }
 
 window.addEventListener("load", showTask);
+
+const getDadJoke = async () => {
+  const config = { headers: { Accept: "application/json" } };
+  const res = await axios.get("https://icanhazdadjoke.com/", config);
+  Joke.append(res.data.joke);
+  Joke.innerHTML = res.data.joke;
+};
+
+window.addEventListener("load", getDadJoke);
