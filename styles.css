@@ -129,7 +129,7 @@ ul li span:hover {
   text-align: center;
 }
 
-@media (min-width: 350px) {
+@media (min-width: 721px) {
   * {
     font-size: 16px;
     margin: 0;
