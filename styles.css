@@ -47,7 +47,7 @@ input {
   border: none;
   background: none;
   outline: none;
-  font-size: 16px;
+  font-size: 10px;
   text-overflow: clip;
   font-weight: 300;
   color: #ffdfb5;
@@ -62,7 +62,7 @@ button {
   background: none;
   transition: color 0.5s;
   color: #ffffff8e;
-  font-size: 16px;
+  font-size: 10px;
 }
 
 button:hover {
@@ -79,7 +79,7 @@ ul li {
   user-select: none;
   position: relative;
   transition: color 0.2s;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 ul li::before {
