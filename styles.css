@@ -72,7 +72,7 @@ button:hover {
 
 ul li {
   display: flex;
-  justify-content: space;
+  justify-content: space-between;
   list-style: none;
   font-weight: 300;
   font-size: 16px;
@@ -80,7 +80,7 @@ ul li {
   user-select: none;
   position: relative;
   transition: color 0.2s;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 ul li::before {
